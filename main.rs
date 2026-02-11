@@ -28,3 +28,29 @@ fn main() {
 
     const A : i32 = 4;
     println!("{}",A);
+
+    //rust operators
+    let add = 5 + 3;
+    let sub = 5-3;
+    println!("Add : {}",add);
+    println!("Sub : {}",sub);
+    
+    //assignment operators
+    let mut x = 5;
+    println!("Before : {}",x);
+    x+=5;
+    println!("After : {}",x);
+
+    //comparison operator
+    let a = 6;
+    let b = 6;
+    println!("6 == 6: {}", a==b);
+    println!("6 < 6: {}", a<b);
+    println!("6 != 6: {}", a!=b);
+
+    //logical operators
+    let isloggedin = true;
+    let isadmin = false;
+    println!("is regular user : {}",isloggedin && isadmin);
+    println!("has any access : {}",isloggedin || isadmin);
+    println!("not logged in : {}",!isloggedin);
