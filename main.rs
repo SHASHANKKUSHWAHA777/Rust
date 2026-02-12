@@ -54,3 +54,20 @@ fn main() {
     println!("is regular user : {}",isloggedin && isadmin);
     println!("has any access : {}",isloggedin || isadmin);
     println!("not logged in : {}",!isloggedin);
+
+     //rust booleans
+    let isloggedin1 =  true;
+    println!("is user loggein in? : {}",isloggedin1);
+
+    let age = 20;
+    let can_vote = age>= 18;
+    println!("can vote? : {}",can_vote);
+
+    //boolean if statements
+    let userloggedin = true;
+    if userloggedin {
+        println!("Welcome");
+    }
+    else{
+        println!("Please Login");
+    }
