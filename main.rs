@@ -71,3 +71,62 @@ fn main() {
     else{
         println!("Please Login");
     }
+
+    //rust if 
+    if 7>5 {
+        println!("7 greater than 5");
+    }
+
+    //rust if else
+    let userloggedin2 = true;
+    if userloggedin2 {
+        println!("Welcome");
+    }
+    else{
+        println!("Please Login");
+    }
+
+    //rust else if
+    //You can check multiple conditions using else if:
+
+    let score = 85;
+
+    if score >= 90 {
+    println!("Grade: A");
+    } else if score >= 80 {
+    println!("Grade: B");
+    } else if score >= 70 {
+    println!("Grade: C");
+    } else {
+    println!("Grade: F");
+    }
+
+    /*Using if as an Expression
+    In Rust, if...else can also be used as an expression.
+
+    This means you can assign the result of an if to a variable: */
+    let time =20;
+    let greeting = if time>15 {
+        "good day."
+    } else{
+        "Good evening"
+    };
+    println!("{}",greeting);
+    
+    //simplified syntax
+    let time2 = 20;
+    let greeting = if time2 < 18 { "Good day." } else { "Good evening." };
+    println!("{}", greeting);
+
+    /*Don't Mix Types
+    Note: The value from if and else must be the same type, like two pieces of text or two numbers (in the example above, both are strings).
+
+    When you mix types, like a string and an integer, you'll get an error:
+
+    Example */
+    /*let number = 5;
+    let result = if number < 10 { "Too small" } else { 100 };
+    println!("{}", result); */
+    /*Result:
+    error[E0308]: `if` and `else` have incompatible types*/
+
