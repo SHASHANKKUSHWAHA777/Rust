@@ -130,3 +130,48 @@ fn main() {
     /*Result:
     error[E0308]: `if` and `else` have incompatible types*/
 
+    /*Match
+    When you have many choices, using match is easier than writing lots of if...else.
+
+    match is used to select one of many code blocks to be executed: */
+
+    let day =4;
+
+    match day {
+        1 => println!("Monday"),
+        2 => println!("tuesday"),
+        3 => println!("wednesday"),
+        4 => println!("thursday"),
+        5 => println!("friday"),
+        6 => println!("saturday"),
+        7 => println!("sunday"),
+        _ => println!("invalid day"),
+    }
+
+    //multiple matches
+    let day2 = 6;
+
+    match day2 {
+        1|2|3|4|5 => println!("weekday"),
+        6|7 => println!("weekend"),
+        _ => println!("invalid input"),
+    }
+
+    //match with a Return Value
+    //Just like if, match can also return a value:
+    //This means you can save the result of a match into a variable:
+    //Example
+  let day3 = 4;
+
+  let result = match day3 {
+    1 => "Monday",
+    2 => "Tuesday",
+    3 => "Wednesday",
+    4 => "Thursday",
+    5 => "Friday",
+    6 => "Saturday",
+    7 => "Sunday",
+    _ => "Invalid day.",
+  };
+
+    println!("{}", result);
