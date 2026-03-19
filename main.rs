@@ -175,3 +175,65 @@ fn main() {
   };
 
     println!("{}", result);
+
+    //rust loops
+    /*loop{
+    println!("this will repeat forever");
+  }*/
+
+    //break keyword to break loops
+    let mut count = 1;
+
+    loop{
+        println!("sup manig");
+
+        if count == 4 {
+            break;
+        }
+
+        count+=1;
+    } 
+
+    //return a value
+    let mut count1 = 1;
+
+    let result = loop{
+        println!("sup manig");
+
+        if count1 == 4 {
+            break count1;
+        }
+
+        count1+=1;
+    };
+    println!("loop stopped at : {}", result);
+
+    //rust while loops
+    let mut d=6;
+
+    while d<=10 {
+        println!("supnig");
+        d+=1;
+    }
+
+    //stopping a while loop musing break
+    let mut f = 1;
+
+    while f<=3{
+        if f==3{
+            break;
+        }
+        println!("yaymanig");
+        f+=1;
+    }
+    
+    //skipping a value using while loop
+    let mut y=1;
+    while y<=3{
+        if y==2{
+            y+=1;
+            continue;
+        }
+        println!("giganig");
+        y+=1;
+    }
