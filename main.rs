@@ -237,3 +237,78 @@ fn main() {
         println!("giganig");
         y+=1;
     }
+
+
+    //rust for loops
+    for i in 1..10{
+        println!("i is :{}",i)
+    }
+    //inclusive range
+    for i in 1..=10{
+        println!("i is :{}",i)
+    }
+
+    //break and continue
+    for i in 1..=10 {
+    if i == 3 {
+    continue; // skip 3
+    }
+    if i == 5 {
+    break; // stop before printing 5
+    }
+    println!("i is: {}", i);
+}
+/*Rust Loops Summary
+Rust has three types of loops that let you run code over and over again. Each one is used in different situations:
+
+1. loop
+The simplest kind of loop. It runs forever unless you stop it with break.
+
+loop {
+  // do something
+  if condition {
+    break;
+  }
+}
+Use loop when you don't know in advance how many times to repeat.
+
+2. while
+Repeats code while a condition is true. It checks the condition before each loop.
+
+while count <= 5 {
+  println!("{}", count);
+  count += 1;
+}
+Use while when you want to repeat code until something happens.
+
+3. for
+Repeats code a fixed number of times.
+
+for i in 1..=5 {
+  println!("{}", i);
+}
+Use for when you know exactly what to loop through.
+
+Extra Keywords
+You can use these in any loop:
+
+break - stop the loop
+continue - skip a value in the loop
+Now that you know how loops work, you are ready to start working with functions and reusable code! */
+//functions
+distro();
+doki("doki");
+ println!("sum is : {}", SUM);
+}
+
+fn distro(){
+    println!("yay");
+}
+fn doki(name: &str){
+    println!("Hello! {}",name);
+}
+const fn droski(a: i32, b: i32) -> i32 {
+    a + b
+}
+const SUM: i32 = droski(3, 4);
+
